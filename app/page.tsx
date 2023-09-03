@@ -1,14 +1,13 @@
-import DisplayButton from "@/component/DisplayButton";
-import AppProvider from "./AppProvider";
+import DisplayButton from "@/components/DisplayButton";
 
 export default function Home() {
   return (
     <>
-      <div>
-        recoilPersistを有効化しているとき、リロード時にエラーが発生する。
-        <AppProvider>
+      <div className="flex flex-col justify-between items-center space-y-4">
+        <p>recoilPersistを有効化しているとき、リロード時にエラーが発生する。</p>
+        <div>
           <DisplayButton />
-        </AppProvider>
+        </div>
       </div>
     </>
   );
